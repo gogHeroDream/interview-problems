@@ -146,7 +146,7 @@ function dealOrgs(orgs) {
   })
   let otherOrgs = _orgs;
 
-  while(maps.size||!isHas||otherOrgs.length===0) {
+  while(maps.size&&isHas&&otherOrgs.length) {
     otherOrgs = deal(otherOrgs);
   }
   function deal(orgs=[]) {
