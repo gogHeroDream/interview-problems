@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main{
+      margin: 15px 30px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      overflow: hidden;
+    }
+    .card{
+      /* background: yellow; */
+      display: flex;
+    }
+    .card .card-img,.card-des{
+      display: flex;
+    }
+    .card .card-img{
+      width: 30%;
+    }
+    .card .card-img img{
+      width: 100%;
+    }
+    .card .card-des{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .card-des .card-des-part{
+      color: #222;
+      padding-left: 4vw;
+    }
+    .card-des .card-des-part-1 {
+      font-size: 4vw;
+    }
+    .card-des .card-des-part-2 {
+      font-size: 2vw;
+    }
+    .grey{
+      color:#666;
+    }
+    @media screen and (max-width: 1024px) {
+      .card{
+        /* background: red; */
+        flex-direction: column;
+      }
+      .card .card-img{
+        width: 25%;
+        height: 0;
+        padding-top: 25%;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        margin: 20px auto;
+      }
+      .card .card-img img{
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right: 0;
+        margin: auto;
+      }
+      .card-des{
+        height: 25vw
+      }
+      .card-des .card-des-part{
+        padding-left: 0;
+      }
+      .card-des .card-des-part h4{
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="card">
+      <div class="card-img">
+        <img class="" src="./jobs3.jpg" alt="">
+      </div>
+      <div class="card-des">
+        <section class="card-des-part card-des-part-1">
+          <h4>Stay Hungry, stay foolish</h4>
+          <h4>求知若渴，虚心若愚</h4>
+        </section>
+        <section class="card-des-part card-des-part-2">
+          <h4>Stay Hungry</h4>
+          <h4 class="grey">只凭企业家，苹果创始人</h4>
+        </section>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
